@@ -389,14 +389,14 @@ Tile 3079:
   for (let i = 0; i < img.length; i++) {
     for (let j = 0; j < img[i].length; j++) {
       if (img[i][j] == "#") {
-        g.drawPixel(i*6, j*6, 6, 6, "#000000");
+        g.drawPixel(j*6, i*6, 6, 6, "#000000");
         otherBiom++;
       }
       else if (img[i][j] == "O") {
-        g.drawPixel(i*6, j*6, 6, 6, "#00FF00");
+        g.drawPixel(j*6, i*6, 6, 6, "#00FF00");
       }
       else {
-        g.drawPixel(i*6, j*6, 6, 6, "#0000FF");
+        g.drawPixel(j*6, i*6, 6, 6, "#0000FF");
       }
   	}
   }
